@@ -17,4 +17,33 @@ function start(){
 	guesses = 8;
 	letters = [];
 
-	console.log(word);
+    console.log(word);
+
+//blanks    
+for (i=0; i<word.length; i++){
+    blanks.push('_');
+}
+
+//blanks become a string
+console.log(blanks.join(" "));
+document.querySelector("#input").innerHTML = (blanks.join(" "));
+document.querySelector("#letters").innerHTML = (letters);
+document.querySelector("#guesses").innerHTML = (guesses);
+document.querySelector("#score").innerHTML = ("Wins: "+ wins + " Losses: "+ losses);
+}
+
+document.onkeyup = function(event){
+
+	
+
+	for(i=0;i<alpha.length;i++){
+		if(event.key === alpha[i]){
+			letterstest = true;
+		}
+    }
+    
+    //refresh function
+function refresh(x){
+	console.log(x);
+	blanks[x] = word[i] + " ";
+	document.querySelector("#input").innerHTML = (blanks.join(" "));
