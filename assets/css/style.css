@@ -4,7 +4,7 @@ body{
 	
 }
 #playing-field{
-	margin-top: 50px;
+	margin-top: 30px;
 	background:rgba(245,245,245,.7);
 }
 #letters{
@@ -12,4 +12,13 @@ body{
 }
 #reset{
 	margin-bottom: 30px;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
